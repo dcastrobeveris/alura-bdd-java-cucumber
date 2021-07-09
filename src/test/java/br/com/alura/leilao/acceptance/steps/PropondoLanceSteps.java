@@ -95,11 +95,8 @@ public class PropondoLanceSteps {
 		for(Map<String, String> mapa: valores) {
 			String valor = mapa.get("valor");
 			String nome = mapa.get("nomeUsuario");
-			
 			Lance lance = new Lance(new Usuario(nome), new BigDecimal(valor));
 			lista.add(lance);
-			
-			System.out.println(mapa.keySet());
 		}
 	}
 	
